@@ -25,7 +25,7 @@ public class TestDog
 
 
     public static void main(String[] args) {
-        Dog[] TestDogArray = new Dog []{new Dog("Bunny", 2) new Dog("Doggo", 3) };
+        Dog[] TestDogArray = new Dog []{new Dog("Bunny", 2), new Dog("Doggo", 3) };
         TestDog A = new TestDog(TestDogArray);
         Dog[] ExtraDogsArray = new Dog[] {new Dog("Funny", 4)};
         A.DodAppend(ExtraDogsArray);
