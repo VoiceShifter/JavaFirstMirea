@@ -2,13 +2,13 @@ package ru.mirea.task3;
 
 public class Hand
 {
-    boolean Existance;
-    double Lenght;
+    public boolean Existance;
+    public double Lenght;
 
-    Hand(double aLenght, boolean aExistance)
+    Hand(double Lenght, boolean Existance)
     {
-        Lenght = aLenght;
-        Existance = aExistance;
+        this.Lenght = Lenght;
+        this.Existance = Existance;
     }
 
     @Override

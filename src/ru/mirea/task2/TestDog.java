@@ -18,8 +18,9 @@ public class TestDog
         }
         for(int i = DogArray.length; i < NewDogArray.length; i++)
         {
-            NewDogArray[i] = ExtraDogs[i];
+            NewDogArray[i] = ExtraDogs[i - DogArray.length];
         }
+        DogArray = NewDogArray;
     }
 
 
@@ -31,7 +32,7 @@ public class TestDog
         A.DodAppend(ExtraDogsArray);
         for (Dog dog : A.DogArray)
         {
-            dog.toString();
+            System.out.print(dog);
         }
     }
 }
