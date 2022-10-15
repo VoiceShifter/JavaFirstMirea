@@ -1,28 +1,26 @@
 package ru.mirea.task5;
 
+
 public class Bowl extends Dish {
     double V;
-    Bowl(double aLoverRadious, String aMaterial, double aV){
+
+    Bowl(double aLoverRadious, String aMaterial, double aV) {
         super(aLoverRadious, aMaterial);
         this.V = aV;
+    }
+    void BreakBowl(){
+        this.LoverRadious =0;
+        this.Material = "Doesnt matter";
+        this.V = 0;
     }
 
     @Override
     public String toString() {
-        return "Bowl{}";
-    }
-}
-package ru.mirea.task5;
-
-public class Bowl extends Dish {
-    double V;
-    Bowl(double aLoverRadious, String aMaterial, double aV){
-        super(aLoverRadious, aMaterial);
-        this.V = aV;
+        return "Bowl:" + "Radious =" + LoverRadious + '\n' + "Material =" + Material + '\n' + "Capacity =" + V;
     }
 
-    @Override
-    public String toString() {
-        return "Bowl{}";
+    public static void main(String[] args) {
+        Bowl TestBowl = new Bowl(13, "Metal", 4);
+        System.out.println(TestBowl.toString());
     }
 }

@@ -9,7 +9,7 @@ public class Shape
     }
     @Override
     public String toString() {
-        return "Прочтейшая форма с площадью = " + S;
+        return "Проcтейшая форма с площадью = " + S;
     }
 
     public static void main(String[] args) {

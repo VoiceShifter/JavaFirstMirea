@@ -6,5 +6,13 @@ public  abstract class Dish {
     Dish(double aLoverRadious, String aMaterial){
         this.LoverRadious = aLoverRadious;
         this.Material = aMaterial;
-    };
+    }
+
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "LoverRadious=" + LoverRadious +
+                ", Material='" + Material + '\'' +
+                '}';
+    }
 }
