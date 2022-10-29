@@ -12,22 +12,21 @@ public class Square extends Recrangle {
     }
 
     @Override
-    void GetLenght() {
-        super.GetLenght();
-    };
+    void setWidth(double aWidth) {
+        super.setWidth(aWidth);
+        super.setLenght(aWidth);
+    }
 
     @Override
-    void SetWidth(double aWidth) {
-        super.SetWidth(aWidth);
-    };
+    void setLenght(double aWidth) {
+        super.setWidth(aWidth);
+        super.setLenght(aWidth);
+    }
 
-    @Override
-    void SetLenght(double aLenght) {
-        super.SetLenght(aLenght);
-    };
-
-    @Override
-    void GetWidth() {
-        super.GetWidth();
+    public static void main(String[] args) {
+        Square test = new Square(9);
+        test.getLenght();
+        test.setLenght(13);
+        test.getWidth();
     }
 }
